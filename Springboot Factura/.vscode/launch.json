@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringbootDifacturaApplication<springboot-difactura>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.alejandro.springboot.di.factura.springboot_difactura.SpringbootDifacturaApplication",
+            "projectName": "springboot-difactura",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

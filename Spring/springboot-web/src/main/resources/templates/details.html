@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymneleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${title}">Document</title>
+</head>
+<body>
+    <h1 th:text="${title}"> </h1>
+    <ul>
+        <li th:text="${user.name}"></li>
+        <li th:text="${user.lastName}"></li>
+        <li th:if="${user.email}" th:text="${user.email}"></li>
+        <li th:if="${user.email == null}" th:text="${'No tiene email'}"></li>
+    </ul>
+    <a th:href="@{/list}">Ver listado</a>
+    <a th:href="@{'/api/params/foo?message=' + ${title} }">Ver mensaje</a>
+</body>
+</html>
